@@ -76,6 +76,9 @@ modals?.forEach(modal => {
 
 pageLinks?.forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
+    header?.classList.remove('menu-opened');
+    menuToggle?.classList.remove('bx-x');
+    menuToggle?.classList.add('bx-menu');
     window.scrollTo({
         top: document.getElementById(link.dataset.dest).offsetTop,
         behavior: "smooth"
