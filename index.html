@@ -1037,6 +1037,52 @@
                 </form>
             </div>
         </section>
+        <div class="modal" id="modal">
+            <div>
+                <div>
+                    <h2>Хочу на курс!</h2>
+                    <i class='bx bx-x close-modal'></i>
+                </div>
+                <div>
+                    <form class="form modal-form">
+                        <div>
+                            <input type="hidden" name="emailjsNumber">
+                            <input type="text" name="fullName" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="tel" name="phone" placeholder="Phone">
+                            <textarea name="comment" rows="8" placeholder="Just write to me..."></textarea>
+                        </div>
+                        <button type="submit" class="main-button">
+                            <span class="static-show">Надіслати</span>
+                            <span class="hover-show">Надіслати</span>
+                        </button>
+                    </form>
+                    <img width="320" height="562" src="images/modal.png" alt="modal">
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-success">
+            <div>
+                <h2>Заявку прийнято</h2>
+                <img width="640" height="320" src="images/modal_success.png" alt="modal-success">
+                <p>Будь ласка, перевірте вашу електронну пошту, оскільки ми надіслали вам детальну інформацію про курс, включаючи розклад занять та доступ до нашої онлайн-платформи навчання. Якщо ви не знайшли наше повідомлення, будь ласка, перевірте папку "Спам" або "Вхідні" вашої поштової скриньки.</p>
+                <button type="button" class="main-button close-modal">
+                    <span class="static-show">Гаразд</span>
+                    <span class="hover-show">Гаразд</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal" id="form-success">
+            <div>
+                <h2>Чудово!</h2>
+                <img width="480" height="320" src="images/form_success.png" alt="form-success">
+                <p>Повідомлення успішно надіслано!</p>
+                <button type="button" class="main-button close-modal">
+                    <span class="static-show">Гаразд</span>
+                    <span class="hover-show">Гаразд</span>
+                </button>
+            </div>
+        </div>
     </main>
     <footer>
         <div>
@@ -1113,52 +1159,6 @@
         </div>
         <p>© 2023 IPM. All rights reserved.</p>
     </footer>
-    <div class="modal" id="modal">
-        <div>
-            <div>
-                <h2>Хочу на курс!</h2>
-                <i class='bx bx-x close-modal'></i>
-            </div>
-            <div>
-                <form class="form modal-form">
-                    <div>
-                        <input type="hidden" name="emailjsNumber">
-                        <input type="text" name="fullName" placeholder="Full Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="tel" name="phone" placeholder="Phone">
-                        <textarea name="comment" rows="8" placeholder="Just write to me..."></textarea>
-                    </div>
-                    <button type="submit" class="main-button">
-                        <span class="static-show">Надіслати</span>
-                        <span class="hover-show">Надіслати</span>
-                    </button>
-                </form>
-                <img width="320" height="562" src="images/modal.png" alt="modal">
-            </div>
-        </div>
-    </div>
-    <div class="modal" id="modal-success">
-        <div>
-            <h2>Заявку прийнято</h2>
-            <img width="640" height="320" src="images/modal_success.png" alt="modal-success">
-            <p>Будь ласка, перевірте вашу електронну пошту, оскільки ми надіслали вам детальну інформацію про курс, включаючи розклад занять та доступ до нашої онлайн-платформи навчання. Якщо ви не знайшли наше повідомлення, будь ласка, перевірте папку "Спам" або "Вхідні" вашої поштової скриньки.</p>
-            <button type="button" class="main-button close-modal">
-                <span class="static-show">Гаразд</span>
-                <span class="hover-show">Гаразд</span>
-            </button>
-        </div>
-    </div>
-    <div class="modal" id="form-success">
-        <div>
-            <h2>Чудово!</h2>
-            <img width="480" height="320" src="images/form_success.png" alt="form-success">
-            <p>Повідомлення успішно надіслано!</p>
-            <button type="button" class="main-button close-modal">
-                <span class="static-show">Гаразд</span>
-                <span class="hover-show">Гаразд</span>
-            </button>
-        </div>
-    </div>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="index.js"></script>
 </body>
